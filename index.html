@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>HTML Image with Link Practice</title>
+  <link rel="stylesheet" href="styles.css">
+  
+</head>
+<body>
+  
+  <h2 align="center">Image and Hyperlink</h3>
+  <p align="center"><img src="bd.png" alt="image" width="150px" height="150px"></p><br>
+  
+  <h2 align="center">Image as a hyperlink</h3>
+  <div align="center">
+    <a href="https://govssc.edu.bd/" target="_blank">
+      <img src="logo.png" alt="image" width="150px" height="150px">
+    </a>
+  </div>
+  <p align="center">
+    <a href="https://govssc.edu.bd/" target="_blank">GSSC Website</a>
+  </p>
+  <br><hr><br>
+  <p align="center">
+    <audio controls>
+  <source src="audio.mp3" type="audio/mpeg">
+</audio>
+  </p>
+  <br>
+  <p>
+    <h2 align="center">General Table</h2>
+<table border="1" cellspacing="0" width="200" align="center" style="margin: 0 auto;">
+  <caption>Result table</caption>
+  <tr bgcolor="aqua">
+    <th>Roll</th>
+    <th>Name</th>
+    <th>G.P.A</th>
+  </tr>
+  <tr align="center">
+    <td>100</td>
+    <td>A</td>
+    <td>5.00</td>
+  </tr>
+  <tr align="center">
+    <td>101</td>
+    <td>B</td>
+    <td>4.80</td>
+  </tr>
+</table>
+  </p>
+  <br><br>
+  
+  <!-- This is Calculator code -->
+  <h2 align="center"><u><b>Hey! It's My Simple Calculator</b></u></h2>
+  <div class="calculator-wrapper">
+  <div class="calculator">
+  <input type="text" id="expression" placeholder="0" disabled>
+  <div class="buttons">
+    <div class="row">
+      <button onclick="appendToDisplay('(')">(</button>
+      <button onclick="appendToDisplay(')')">)</button>
+      <button onclick="clearDisplay()">AC</button>
+      <button onclick="appendToDisplay('+')">+</button>
+    </div>
+    <div class="row">
+      <button onclick="appendToDisplay('7')">7</button>
+      <button onclick="appendToDisplay('8')">8</button>
+      <button onclick="appendToDisplay('9')">9</button>
+      <button onclick="appendToDisplay('-')">-</button>
+    </div>
+    <div class="row">
+      <button onclick="appendToDisplay('4')">4</button>
+      <button onclick="appendToDisplay('5')">5</button>
+      <button onclick="appendToDisplay('6')">6</button>
+      <button onclick="appendToDisplay('*')">*</button>
+    </div>
+    <div class="row">
+      <button onclick="appendToDisplay('1')">1</button>
+      <button onclick="appendToDisplay('2')">2</button>
+      <button onclick="appendToDisplay('3')">3</button>
+      <button onclick="appendToDisplay('/')">/</button>
+    </div>
+    <div class="row">
+      <button onclick="appendToDisplay('0')">0</button>
+      <button onclick="appendToDisplay('.')">.</button>
+      <button onclick="appendToDisplay('%')">%</button>
+      <button onclick="calculateResult()">=</button>
+    </div>
+  </div>
+    </div> <!-- closes .calculator -->
+  </div> <!-- closes .calculator-wrapper -->
+  <br>
+  <script src="script.js"></script>
+  <br>
+</body>
+</html>
